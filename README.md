@@ -1,26 +1,25 @@
-#  Family-friendly Home Network: Using Pi-hole as a content filter
+#  Family-oriented Home Network Management: Using Pi-hole as a content filter
 
-This project makes use of Pi-hole; a network-wide DNS sinkhole and makes use of its ability to configure upstream DNS to protect family members and children by automatically blocking adult content, malicious websites, and invasive tracking before it ever reaches a device.
+This project utilises Pi-hole; a network-wide DNS sinkhole and makes use of its ability to configure upstream DNS to protect family members and children from  adult content, malicious websites, and invasive tracking before it ever reaches a device.
 
 ---
 
 ## Project Overview
 
-The goal of this project was to secure my home network at the router level. Instead of installing individual parental control software on every phone, tablet, and smart TV, this setup routes all home network traffic through a dedicated Pi-hole instance. 
-
-By utilizing specific, curated blocklists (Adlists), any request made by a device to load adult, illicit, or harmful content is blocked instantly at the DNS level.
+The purpose of this project is to centralise control of URL access for a home network through DNS, blocking tracking requests, malicious websites as well as unwanted content (adult, gambling, drugs, violence etc.). 
 
 ### Key Benefits:
-* **Zero Client Software:** Works on every device connected to the Wi-Fi (even guest devices) without needing any app installations.
+* **No Client Software:** As this is implemented through DNS, there is no need to configure endpoint devices with software or MDM, all devices, resident or guest, have the exact same enforcement rules applied; this prolongs endpoint battery life and reduces CPU usage, minimises administrative overhead and ensures peace of mind.
 * **Privacy-Focused:** Blocks trackers and telemetry alongside harmful content.
-* **Performance Boost:** By dropping advertisement and tracking scripts early, web pages often load noticeably faster.
+* **Performance Boost:** As advertising media and URLs are blocked, webpages are able to be displayed faster.
+*  **Granularity & control:** Whilst most ISP routers allow the use of upstream DNS servers such as OpenDNS FamilyShield, they don't provide any URL level control, opting instead for a everything or nothing approach. This solution grants parents complete control over everything and they can implement rules or changes as they see fit.  
 
 ---
 
 ## The Hardware & Environment
 
-* **Hardware:** [e.g., Raspberry Pi 4 Model B / Raspberry Pi Zero 2W / An old laptop running Linux]
-* **Operating System:** [e.g., Raspberry Pi OS Lite (64-bit)]
+* **Hardware:** [e.g. Raspberry Pi or other SBC/ARM architecture devices or any 24/7 capable mini server, VM, literally anything that can run ]
+* **Operating System:** [e.g., Raspberry Pi OS or Unix-based OS]
 * **Installation Method:** [e.g., Docker Container / Bare-metal curl script]
 * **Upstream DNS Provider:** [e.g., Cloudflare Families (1.1.1.3) for an extra layer of malware and adult content filtering]
 
