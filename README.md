@@ -1,2 +1,2 @@
 # pihole
-Using Pihole's DNS functionality to simultaneously block ads whilst also filtering adult and unwanted content for families
+Using Pihole's DNS functionality to block ads whilst simultaneously filtering out adult and other unwanted content, giving families better control over the type of content children are exposed to.
