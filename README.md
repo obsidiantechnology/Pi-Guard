@@ -42,11 +42,10 @@ Instead of modifying settings on individual devices, the network routes traffic 
 
 To achieve reliable protection for kids without breaking the useful internet, I implemented a layered blocklist strategy:
 
-| List Name / Source | Focus Area | Impact |
-| :--- | :--- | :--- |
-| **Default Pi-hole List** | General Ads & Malware | Blocks core tracking domains and known malicious sites. |
-| **StevenBlack FMS** | Pornography & Social Media | Restricts access to adult sites and gambling. |
-| **Firebog Ticked Lists** | Trackers & Telemetry | Enhances general smart-TV and app privacy. |
+| List Name / Source | Focus Area | Impact | Link |
+| :--- | :--- | :--- | :--- |
+| **StevenBlack FMS** | Pornography, Social Media, Fake News & Gambling | Restricts access to adult sites and gambling. | https://github.com/StevenBlack/hosts 
+| **Hagezi DNS Blocklists** | Mixed Content | Block lists of varying degrees and a wide range of categories. | https://github.com/hagezi/dns-blocklists
 
 > 💡 **Tip for families:** I also enabled **RegEx blocking** for specific high-risk keywords and explicitly blocked major malicious domains via the native blocklist settings.
 
